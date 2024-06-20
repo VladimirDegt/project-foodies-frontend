@@ -1,0 +1,42 @@
+.button {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 50%;
+
+  box-shadow: inset 0 0 0 1px var(--black-10);
+
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  stroke: #000;
+}
+
+.button:hover {
+  background-color: rgba(5, 5, 5, 1);
+}
+
+.button:hover .icon {
+  stroke: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}

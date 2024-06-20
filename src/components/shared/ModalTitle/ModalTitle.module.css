@@ -1,0 +1,15 @@
+.modal_title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .modal_title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+    }
+}

@@ -1,0 +1,117 @@
+/* Стилі для mobile  */
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.1);
+}
+
+.logo {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-transform: lowercase;
+}
+
+.list_social {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.item_social {
+  border-radius: 50px;
+  border: 1px solid rgba(5, 5, 5, 0.12);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.item_social:hover {
+  background-color: var(--black);
+  border: none;
+}
+
+.icon {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  stroke: none;
+  transition: fill var(--transition);
+}
+
+.item_social:hover .icon,
+.item_social:focus .icon {
+  fill: var(--white);
+}
+
+.copr {
+  padding-top: 40px;
+  color: var(--black-60);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+  padding-bottom: 16px;
+}
+
+/* Стилі для tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap_footer {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.48px;
+  }
+
+  .copr {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+    padding-bottom: 32px;
+  }
+}
+
+/* Стилі для  desktop*/
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap_footer {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .copr {
+    padding-bottom: 72px;
+  }
+}

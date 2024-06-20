@@ -1,0 +1,49 @@
+.recept-nav-btn {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.labels-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.category {
+  display: flex;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 45px;
+  color: white;
+  border: 1px solid var(--white-40);
+  background: var(--white-30);
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid var(--white-30);
+}
+
+.icon {
+  stroke: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .recept-nav-btn {
+    height: 369px;
+  }
+}

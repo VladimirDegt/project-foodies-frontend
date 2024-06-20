@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 30px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Стилі для swiper testimotial*/
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  background: #d9d9d9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--black, var(--black)) !important;
+}

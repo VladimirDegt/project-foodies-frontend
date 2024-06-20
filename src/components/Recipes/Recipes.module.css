@@ -1,0 +1,110 @@
+.button_back {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.category_title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.category_description {
+  color: var(--black-80);
+  font-size: 14px;
+}
+
+.category_info_wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 64px auto 32px;
+}
+
+.category_section {
+  max-width: 343px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.category_selects {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.recipes_search_wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.no_recipes {
+  color: var(--toastify-color-error);
+  height: 300px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.no_recipes {
+  color: var(--toastify-color-error);
+  height: 300px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .category_selects {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .category_section {
+    max-width: 704px;
+    margin-bottom: 100px;
+  }
+
+  .recipes_search_wrapp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .category_recipes_selectors_wrapp {
+    display: flex;
+    gap: 14px;
+  }
+
+  .category_selects {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .category_section {
+    max-width: 1280px;
+    margin-bottom: 120px;
+  }
+
+  .no_recipes {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .no_recipes {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}

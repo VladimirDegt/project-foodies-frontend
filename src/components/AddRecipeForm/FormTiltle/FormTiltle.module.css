@@ -1,0 +1,39 @@
+.formTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (min-width: 375px) {
+  .formTitleWrapper {
+    width: 343px;
+  }
+}
+@media (min-width: 765px) {
+  .formTitleWrapper {
+    width: 443px;
+  }
+}
+
+.fromDescription {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: calc(20 / 14);
+  letter-spacing: -0.28px;
+}
+
+@media (min-width: 765px) {
+  .fromDescription {
+    font-size: 16px;
+  }
+}
+
+.formTitle {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: calc(32 / 28);
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}

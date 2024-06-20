@@ -1,0 +1,126 @@
+.recipeImage {
+  width: 100%;
+  height: 230px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.style_button_favorit {
+  background-color: black;
+}
+
+.style_button_favorit:hover {
+  background-color: var(--white);
+}
+
+.style_button_favorit:hover svg {
+  stroke: var(--black);
+}
+
+.style_button_notFavorit:hover svg {
+  stroke: var(--white);
+}
+
+.textWrap {
+  margin-bottom: 8px;
+  height: 72px;
+}
+
+.recipeDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.avatarBtnswrap {
+  display: flex;
+  align-items: center;
+}
+
+.avatarBtnswrap a {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.avatarWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.iconWrapper {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 50%;
+
+  box-shadow: inset 0 0 0 1px var(--black-10);
+
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrapper:hover {
+  background-color: rgba(5, 5, 5, 1);
+}
+
+.iconWrapper:hover svg {
+  stroke: var(--white);
+}
+
+.iconList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.recipeCard {
+  width: 343px;
+}
+
+.header_card {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .recipeDescription {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .recipeImage {
+    height: 275px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .iconWrapper {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .recipeCard {
+    width: 290px;
+  }
+}

@@ -1,0 +1,35 @@
+.wrap_testimonial {
+  margin: 64px 0 80px;
+}
+
+.container {
+  width: 100%;
+}
+.text_first {
+  color: var(--black-60);
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  margin-bottom: 16px;
+}
+
+.section_title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap_testimonial {
+    margin: 100px 0;
+  }
+  .testimonial_container {
+    margin: 46px 0 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrap_testimonial {
+    margin: 120px 0;
+  }
+}

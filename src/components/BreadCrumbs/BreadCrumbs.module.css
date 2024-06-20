@@ -1,0 +1,30 @@
+/* src/components/BreadCrumbs.module.css */
+.breadcrumbs {
+  color: var(--black-40);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.slash {
+  margin: 0 8px;
+}
+
+.link_to_home {
+  color: var(--black-40);
+  text-decoration: none;
+}
+
+.current_page {
+  color: var(--black);
+}
+
+.link_to_home:hover {
+  color: var(--black);
+}
+
+.link_to_home:hover ~ .current_page {
+  color: var(--black-40);
+}

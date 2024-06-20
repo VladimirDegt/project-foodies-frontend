@@ -1,0 +1,36 @@
+.iconBtn {
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid var(--black-12);
+  transition: background-color var(--transition);
+  cursor: pointer;
+}
+
+.icon {
+  stroke: var(--black);
+  transition: stroke var(--transition);
+}
+
+.iconBtn:hover .icon {
+  stroke: var(--white);
+}
+
+.counterInput {
+  text-align: center;
+  border: none;
+  width: 50px;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  padding: 0;
+}
+
+@media (min-width: 765px) {
+  .iconBtn {
+    width: 56px;
+    height: 56px;
+  }
+}

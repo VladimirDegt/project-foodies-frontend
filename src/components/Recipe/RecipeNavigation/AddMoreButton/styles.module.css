@@ -1,0 +1,17 @@
+.add-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 30px;
+  background: var(--black);
+  color: var(--white);
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .add-more-btn {
+    height: 369px;
+  }
+}

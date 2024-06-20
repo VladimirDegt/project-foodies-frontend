@@ -1,0 +1,48 @@
+.header_popular_recipes {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.popular_recipes_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 343px;
+}
+
+.popular_recipes_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular_recipes_container {
+    max-width: 704px;
+    gap: 40px;
+  }
+
+  .header_popular_recipes {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.48px;
+  }
+  .popular_recipes_list {
+    flex-wrap: wrap;
+    gap: 40px 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popular_recipes_container {
+    max-width: 1280px;
+  }
+
+  .popular_recipes_list {
+    gap: 20px;
+  }
+}

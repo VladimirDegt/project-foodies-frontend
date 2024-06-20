@@ -1,0 +1,90 @@
+.menuContainer {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--black-20);
+  margin-bottom: 32px;
+}
+
+.menuContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItem {
+  position: relative;
+  display: inline-block;
+  padding: 0px 0px 14px 0px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--black-60);
+  white-space: nowrap;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  transition: color 0.1s, border-bottom 0.1s;
+}
+
+.menuItem:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menuItem:hover {
+  color: var(--black);
+}
+
+.menuItem.active {
+  color: var(--black);
+}
+
+.menuItem.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background-color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .menuContainer {
+    justify-content: start;
+    overflow-x: visible;
+    white-space: normal;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-width: auto;
+  }
+
+  .menuItem {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+
+  .menuItem:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menuContainer {
+    justify-content: start;
+    overflow-x: visible;
+    white-space: normal;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-width: auto;
+  }
+
+  .menuItem {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+
+  .menuItem:not(:last-child) {
+    margin-right: 40px;
+  }
+}

@@ -1,0 +1,20 @@
+.test {
+  color: var(--black-90);
+}
+
+.hero_container {
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero_container {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero_container {
+    max-width: 1292px;
+  }
+}

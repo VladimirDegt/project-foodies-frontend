@@ -1,0 +1,121 @@
+/* Стилі для mobile  */
+
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.wrap_profile {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  background-color: var(--black);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.img_profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 30px;
+  margin-right: 6px;
+}
+
+.name_profile {
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.btn_arrow {
+  display: block;
+  box-shadow: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.btn_arrow_open {
+  transform: rotate(180deg);
+  margin-left: 0;
+}
+
+.btn_menu {
+  box-shadow: none;
+  width: 28px;
+  height: 28px;
+  margin-left: 4px;
+}
+
+.wrap_profile_modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 122px;
+  top: 40px;
+  padding: 16px 0 16px 16px;
+  row-gap: 4px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wrap_profile_modal_recipe {
+  border: 1px solid var(--black);
+}
+
+.link {
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.link_log_out {
+  display: flex;
+  align-items: center;
+}
+
+.icon_log_out {
+  margin-left: 2px;
+}
+
+.color_white {
+  color: var(--white);
+}
+
+.color_black {
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .img_profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 6px;
+  }
+
+  .btn_arrow {
+    margin-right: 14px;
+  }
+
+  .btn_menu {
+    display: none;
+  }
+
+  .wrap_profile_modal {
+    width: 148px;
+    top: 60px;
+  }
+}
+

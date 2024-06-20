@@ -1,0 +1,13 @@
+.tags_list {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.tag_list_item {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(5, 5, 5, 0.12);
+  color: rgba(5, 5, 5, 0.6);
+  font-size: 14px;
+}

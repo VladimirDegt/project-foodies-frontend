@@ -1,0 +1,319 @@
+.button {
+  background-color: rgba(5, 5, 5, 0.9);
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+/* -------------SIGNIN/SIGNUP-------------- */
+.auth {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--white-40);
+  background-color: var(--black-20);
+}
+.auth:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transition: color var(--transition), background-color var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .auth {
+    width: 400px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/*--------------------Ripple hover---------------------*/
+.ripple {
+  width: 100%;
+  position: relative;
+  background-color: var(--black-20);
+  display: inline-flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--white-40);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.ripple::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--black);
+  transition: width 0.5s, height 0.5s;
+  z-index: -1;
+}
+
+.ripple:hover::before {
+    width: 800px;
+    height: 800px;
+}
+
+.ripple_text {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .ripple {
+        width: 400px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* --------------ADD RECIPE--------------- */
+.recipe {
+  background-color: transparent;
+  padding: 12px 24px;
+  font-size: 14px;
+  line-height: 1.2;
+  box-shadow: inset 0 0 0 1px var(--white-90);
+}
+
+.recipe:hover,
+.recipe:focus {
+  box-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .recipe {
+    padding: 16px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* --------------ADD FAVORITE--------------- */
+.add_favorite {
+  display: flex;
+  justify-content: center;
+  padding: 14px 20px;
+  background-color: var(--white);
+  color: var(--black-90);
+  border-radius: 30px;
+  border: 1px solid rgba(5, 5, 5, 0.12);
+  transition: var(--transition);
+  font-size: 14px;
+  min-width: 228px;
+}
+
+.add_favorite:hover,
+.add_favorite:focus {
+  color: var(--white);
+  background-color: var(--black-90);
+  box-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .add_favorite {
+    padding: 16px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 278px;
+  }
+}
+
+/* -----------------CATEGORY NAME---------- */
+.categoryName {
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: none;
+  box-shadow: inset 0 0 0 1px var(--white-40);
+  background-color: var(--white-30);
+}
+@media screen and (min-width: 768px) {
+  .categoryName {
+    padding: 10px 14px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+/* ---------------------PUBLISH---------------- */
+.publish {
+  padding: 14px 32px;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: var(--black-85);
+}
+.publish:hover,
+.publish:focus {
+  background-color: var(--black);
+  transition: color var(--transition), background-color var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .publish {
+    padding: 16px 39px;
+    font-size: 16px;
+    line-height: 1.5; /*24*/
+  }
+}
+/* --------------LOG OUT / FOLLOW ---------------- */
+.log_follow {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: var(--black-85);
+}
+
+.log_follow:hover,
+.log_follow:focus {
+  background-color: var(--black);
+  transition: color var(--transition), background-color var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .log_follow {
+    width: 394px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* --------------LOG OUT / CANCEL---------------- */
+.log_cancel {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 1.4;
+  border: 1px solid var(--black-90);
+  background-color: transparent;
+  color: var(--black);
+  font-weight: 700;
+  letter-spacing: -0.28px;
+}
+
+.log_cancel:hover,
+.log_cancel:focus {
+  background-color: var(--black);
+  color: var(--white);
+  transition: color var(--transition), background-color var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .log_cancel {
+    width: 394px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+  }
+}
+/* ----------------------FOLLOW USER ---------------- */
+.follow_user {
+  padding: 8px 16px;
+  color: var(--black-90);
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--black-12);
+  min-width: 100px;
+}
+
+.follow_user:not(:disabled):hover,
+.follow_user:focus {
+  box-shadow: none;
+  color: var(--white);
+  background-color: var(--black);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.follow_user:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .follow_user {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+/* ---------------------PROFILE MAIN ACTION BTN LOGOUT/FOLLOW ---------------- */
+.logoutOrFollowBtn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 14px 0;
+  background-color: var(--black-85);
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  font-weight: 700;
+  color: var(--white);
+  max-width: 394px;
+}
+
+.logoutOrFollowBtn:hover,
+.logoutOrFollowBtn:focus {
+  box-shadow: none;
+  color: var(--white);
+  background-color: var(--black);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .logoutOrFollowBtn {
+    padding: 16px 0;
+    width: 394px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+  }
+}
+/* ---------------------PROFILE LOGOUT ---------------- */
+.logOutBtn {
+  margin-top: 20px;
+  padding: 14px 0;
+  background-color: var(--black-85);
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.logOutBtn:hover,
+.logOutBtn:focus {
+  box-shadow: none;
+  color: var(--white);
+  background-color: var(--black);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .logOutBtn {
+    padding: 16px 0;
+    width: 394px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+  }
+}

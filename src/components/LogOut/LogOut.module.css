@@ -1,0 +1,37 @@
+.container {
+    width: 283px;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.text {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+    color: var(--black-80);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 401px;
+    }
+
+    .list {
+        margin-top: 40px;
+    }
+
+    .text {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

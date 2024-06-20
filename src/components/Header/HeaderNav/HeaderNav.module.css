@@ -1,0 +1,21 @@
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+
+  .wrap_navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrap_navigation {
+    column-gap: 40px;
+  }
+}

@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation > * {
+  flex: 1 0 calc(28% - 10px);
+  margin: 0.5%;
+}
+
+.navigation > *:nth-child(9n + 3),
+.navigation > *:nth-child(9n + 4),
+.navigation > *:nth-child(9n + 8) {
+  flex: 1 0 calc(40% - 10px);
+}
+
+.navigation > *:last-child {
+  max-width: 40%;
+}
+
+.navigation::after {
+  content: "";
+  flex: 1 0 calc(28% - 10px);
+  max-width: calc(30% - 10px);
+}
+
+@media (max-width: 767px) {
+  .navigation > * {
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  .navigation > *:nth-child(5n) {
+    flex: 1 0 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navigation > * {
+    flex: 1;
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+}
