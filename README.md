@@ -1,3 +1,7 @@
+### Notice: 
+It's backup. 
+Original: https://github.com/Chivapchichi2/project-foodies-frontend
+
 # Project Foodies
 
 ![GitHub Stars](https://img.shields.io/github/stars/Chivapchichi2/project-foodies-frontend)
