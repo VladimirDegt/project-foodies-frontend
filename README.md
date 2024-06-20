@@ -1,6 +1,10 @@
 ### Notice: 
-It's backup. 
+It's back up. 
 Original: https://github.com/Chivapchichi2/project-foodies-frontend
+My role: 
+- Full-stack developer. Implementation of authentication. 
+- Integration and setup of Redux and RTK-Query. Development of the Testimonials section.
+- Conducting code reviews and accepting pull requests.
 
 # Project Foodies
 
